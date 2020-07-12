@@ -1,0 +1,267 @@
+body{
+    padding-top:80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro{
+    margin-left:30px;
+    margin-bottom:20px;
+    margin-top:40px;
+}
+.intro-heading{
+    margin-top:auto;
+}
+.intro-explain{
+    text-align: justify;
+    padding-top:5px;
+    background-color:#e0e0e0;
+    margin-bottom:20px;
+    border-radius:10px;
+    
+}
+
+.video {
+	height: 30em;
+}
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*scrollable content*/
+.scrollable{
+    display: block;
+    overflow: auto;
+    height: 29em;
+    background-color:whitesmoke;
+    margin-left:50px;
+    padding-top:20px;
+    border: 1.5px solid #585858;
+    
+}
+.scrollable::-webkit-scrollbar {
+    width: 10px;
+}
+  
+.scrollable::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+.scrollable::-webkit-scrollbar-thumb {
+    background:#b0b0a8; 
+}
+.scrollable::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.scrollable li{
+    margin-top:20px;
+}
+
+/*Quiz*/
+.quiz{
+    margin-top:50px;
+    margin-bottom:50px;
+    padding:20px;
+    border-radius: 20px;
+    margin-left:1px;
+    background-color:#b8d0e0;
+}
+.quiz-title{
+    padding-top:20px;
+    color:#404850;
+}
+.question{
+    padding:20px;
+    font-size:15px;
+    border-radius: 20px;
+    margin: 10px 0 10px 10px;
+    background:whitesmoke;
+    color:#404850;
+}
+.option{
+    padding:10px 0px 5px 20px;
+    background:beige;
+    margin: 10px 0 10px 10px;
+    color:#404850;
+    border-radius: 20px;
+}
+.option:hover{
+    background: whitesmoke;
+    color:gray;
+}
+.btn-primary{
+    background-color:#406088;
+    margin-left:13px;
+    margin-top:30px;
+    border:none;
+
+}
+.result-container{
+    height:400px;
+    font-size:25px;
+    text-align:center;
+    margin-top:50px;
+    margin-bottom:50px;
+    padding:50px 20px 20px 20px;
+    border-radius: 20px;
+    background-color:#b8d0e0;
+}
+.result-container p{
+    margin-top:30px;
+    font-size:18px;
+}
+.fail-continue{
+    text-align:center;
+}
+
+.success-continue{
+    text-align:center;
+}
+
+
+@media (max-width: 992px) {
+.intro{
+    margin-left:15px;
+}
+.intro-heading h1{
+    font-size:150%;
+}
+.intro-explain{
+    font-size:75%;
+}
+.video {
+    height: 22em;
+}
+.scrollable{
+    height:22em;
+}
+.scrollable p{
+  
+  font-size:75%;
+}
+.scrollable h4{
+    font-size:100%;
+}
+.quiz-title h3{
+    font-size: 125%;
+}
+.quiz-title p{
+    font-size:75%;
+}
+.question{
+    font-size:75%;
+}
+.option{
+    font-size:75%;
+}
+}
+
+@media (max-width: 767px) {
+    .intro{
+        margin-left:25px;
+        margin-right:25px;
+    }
+    .intro-explain{
+        margin-top:15px;
+    }
+    .video {
+        height: 23em;
+    }
+    .scrollable{
+        margin-top:25px;
+        margin-left:0px;
+        height:20em;
+    }
+    .quiz{
+        padding:13px;
+    }
+    .option{
+        padding:6px;
+        padding-top:6px;
+    }
+    }
+
+@media (max-width: 576px) {
+body{
+    margin-top:-25px;
+}
+.intro{
+    margin-top:10px;
+    margin-left:8px;
+    margin-right:8px;
+}
+.intro-explain{
+    margin-top:20px;
+}
+.intro-heading h1{
+    font-size:115%;
+}
+.intro-heading p{
+    font-size:80%;
+}
+.video {
+	height: 14em;
+}
+.scrollable{
+    height:15em;
+}
+.quiz{
+    padding:10px;
+}
+.option{
+    padding:6px;
+    padding-top:4px;
+}
+.quiz-title h3{
+    font-size: 100%;
+}
+.quiz-title p{
+    font-size:70%;
+}
+.question{
+    font-size:70%;
+}
+.option{
+    font-size:70%;
+}
+.btn-primary{
+    padding:10px;
+    font-size:75%;
+}
+.result-container{
+    font-size:18px;
+}
+.fail-continue p{
+    font-size:12px;
+}
+.success-continue img{
+    width:80%;
+}
+.success-continue h5{
+    margin-top:20px;
+    font-size: 85%;
+}
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/

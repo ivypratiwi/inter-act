@@ -1,0 +1,246 @@
+body{
+    padding-top:80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.body-content{
+    padding-left:120px;
+    padding-right: 120px;
+}
+
+
+.task1{
+    margin-top:30px; 
+    text-align: center;
+    color:blue; 
+}
+
+.intro-explain{
+    padding-top:5px;
+    background-color:#42a5f5;
+    color: white;
+    margin-bottom:20px;
+    text-align: center;
+    border-radius:10px;
+    font-size:20px;
+}
+
+/*for tips from previous video*/
+.steps-container{
+    background-color:whitesmoke;
+    padding-top:3em;
+    padding-bottom:3em;
+}
+
+.steps-heading{
+    margin-bottom:40px;
+    margin-left:22%;
+    padding-top:0.5em;
+    border-top: solid 0.3px #404040;
+    border-bottom:solid 1px #404040;
+    width:600px;
+    height: 53px;
+}
+
+
+/*for helpful resources*/
+.steps-container2{
+    padding-top:3em;
+    padding-bottom:3em;
+}
+
+.steps-container2 h4{
+    padding-top:1em;
+}
+
+.steps-heading2{
+    margin-bottom:40px;
+    margin-left:22%;
+    padding-top:0.5em;
+    border-top: solid 0.3px #404040;
+    border-bottom:solid 1px #404040;
+    width:600px;
+    height:87px;
+}
+
+.list{
+    margin-left: 20%;
+    font-size:20px;
+    
+}
+
+/*Completion*/
+.completion{
+    margin-bottom:3em;
+}
+.cert-word{
+    margin:auto;
+}
+.btn-success{
+    margin-top:30px;
+    padding:10px 25px 10px 25px; 
+}
+.btn-danger{
+    margin-top:30px;
+    padding:10px 25px 10px 25px; 
+}
+.img-topic{
+    width:50%;
+}
+
+
+
+
+
+@media (min-width: 1920px) {
+    .body-content{
+        padding-left:250px;
+        padding-right: 250px;
+    }
+    .steps-heading{
+        margin-left:30%;
+    }
+    .certificate img{
+        width:80%;
+    }
+    .cert-word{
+        padding-left:20%;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .body-content{
+        padding-left:80px;
+        padding-right: 80px;
+    }
+    .steps-container2{
+        margin-bottom:-30px;
+    }
+    .steps-heading2{
+        width:400px;
+    }
+    .list{
+        margin-left:12%;
+    }
+}
+
+@media (max-width: 768px) {
+    .body-content{
+        padding-left:40px;
+        padding-right: 40px;
+    }
+    .steps-heading{
+        width:300px;
+        margin-left:30%;
+    }
+    .steps-heading2{
+        width:300px;
+        margin-left:30%;
+    }
+    .steps-heading h3{
+        font-size:150%;
+    }
+    .steps-heading2 h3{
+        font-size:150%;
+    }
+    .list{
+        margin-left:9%;
+    }
+    .certificate{
+        margin-bottom: 3em;
+    }
+    .cert-word{
+        padding:20px 0px 0px 25px;
+    }
+    .certificate img{
+        margin-top:30px;
+    }
+}
+
+@media (max-width: 576px) {
+    body{
+        margin-top:-25px;
+    }
+    .body-content{
+        padding-left:20px;
+        padding-right: 20px;
+    }
+    .intro-heading h1{
+        font-size:115%;
+    }
+    .intro-heading h2{
+        font-size:115%;
+    }
+    .intro-heading p{
+        font-size:80%;
+    }
+
+    .steps-heading{
+        width:180px;
+        height:60px;
+        margin-left:20%;
+    }
+    .steps-heading2{
+        width:200px;
+        height:70px;
+        margin-left:20%;
+    }
+    .steps-heading h3{
+        font-size:110%;
+    }
+    .steps-heading2 h3{
+        font-size:110%;
+    }
+    .steps-container2{
+        margin-bottom:-30px;
+    }
+    .steps-container h5{
+        font-size:100%;
+    }
+    .list{
+        margin-left:0%;
+        font-size:90%;
+    }
+    .list ul{
+        margin-left:5%;
+    }
+    .completion{
+        margin-bottom: 3em;
+    }
+    .cert-word{
+        padding:30px 0px 0px 25px;
+    }
+    .cert-word h3{
+        font-size:120%;
+    }
+    .btn-success{
+        padding:5px 15px 5px 15px;
+    }
+    .btn-danger{
+        padding:5px 15px 5px 15px;
+    }
+    .img-topic{
+        margin-top:20px;
+    }
+
+}
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/

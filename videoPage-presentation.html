@@ -1,0 +1,113 @@
+<!DOCTYPE html><html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Inter-Act</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <link rel="stylesheet" href="master.css">
+        <link rel="stylesheet" href="videoPage.css">
+
+
+
+    </head>
+    <body>
+        <!--logo navigation-->
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+            <div class="container-fluid flex-nowrap">
+                <a class="navbar-brand navbar-brand2" href="index.html"><img src="img2/Logo1.png"></a>
+                <div class="dropdown">
+                <span>James Bond</span>
+                    <div class="dropdown-content">
+                    <p>Profile</p>
+                    <p>Progress</p>
+                    <p>Settings</p>
+                    <p>Log Out</p>
+                    </div>
+            </div>          
+            </div>
+        </nav>
+        <!--breadcrumb-->
+        <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="map.html">Select Country</a></li>
+            <li class="breadcrumb-item"><a href="introduction.html">Introduction</a></li>
+            <li class="breadcrumb-item"><a href="introtovideo.html">Peer to Peer Interaction</a></li>
+            <li class="breadcrumb-item"><a href="introtovideo2.html">Peer and Tutor Interaction</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Presentation</li>
+        </ol>
+        </nav>
+    
+
+        <div class="container-fluid">
+        <div class="row intro">
+            <div class="intro-heading col-md-8 col-sm-12"><h1><b>PRESENTATION</b></h1></div>
+            <div class="col-md-8 col-12 intro-explain"><p>Watch the following video for tips on how to give an effective presentation. You will learn from an experienced QUT student who comes from your home country.</p></div>
+            <div class="embed-responsive embed-responsive-4by3 col-md-8 col-xs-12 video">
+                <iframe class= "embed-responsive-item" src="https://player.vimeo.com/video/377231258" width="400" height="300" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+            <div class="column scrollable col-md-3 col-xs-12">
+                <h4>Summary</h4>
+                <ul>
+                    <li>Presentation skills help you to communicate effectively to other people. This skill is useful in any industry or study area.</li>
+                    <li>Learning how to effectively present your ideas is very important to quickly engage with people.</li>
+                    <li>Practice makes perfect! Being prepared will give you more confidence when it is time for your final presentation.</li>
+                    <li>Practice in front of the mirror or with a friend to get some feedback on your presentation before it is time to present to your class.</li>
+                </ul>
+
+            </div> 
+            <div class="row quiz col-md-8 col-sm-12" id="quizContainer">
+                <div class="quiz-title col-12"><h3><b>Check Your Understanding</b></h3>
+                <p>To continue, try the quiz to check your understanding.</p></div>
+                <!--Question will be from JS-->
+                <div class="col-md-11 col-sm-12 question" id="question">Oh my god what is this</div>
+                <div class="option col-md-5 col-sm-8">
+                    <input type="radio" id="opt1" name="option" value="1"/>                  
+                    <label for="opt1" id="lbl_opt1">Checkcheck</label>
+                </div>
+                <div class="option col-md-5 col-sm-8">
+                    <input type="radio" id="opt2" name="option" value="2"/>                  
+                    <label for="opt2" id="lbl_opt2">Checkcheck</label>
+                </div>
+                <div class="option col-md-5 col-sm-8">
+                    <input type="radio" id="opt3" name="option" value="3"/>                  
+                    <label for="opt3" id="lbl_opt3">Checkcheck</label>
+                </div>
+                <div class="option col-md-5 col-sm-8">
+                    <input type="radio" id="opt4" name="option" value="4"/>                  
+                    <label for="opt4" id="lbl_opt4">Checkcheck</label>
+                </div>
+            <button id="NextButton" class="btn btn-primary col-4" onclick="loadNextQuestion();">Next Question</button>
+            </div>
+            
+            <div class="col-md-8 result-container" id="resultContainer" style="display:none";>
+                <div id="result" style="display:none;"></div>
+                <div id="fail-continue" class="fail-continue" style="display:none">
+                    <p>To continue and receive further tips, you have to answer all quizzes correctly. Retry and don't give up!</p>
+                    <button id="retry" class="btn btn-primary col-4" onclick="toRetry();">Retry</button>
+                </div>
+                <div id="success-continue" class="success-continue" style="display:none">
+                    <img src="img2/star1.png" class="img-fluid">
+                    <h5>You got it! Let's continue to the next step.</h5><br>
+                    <a href="taskpage-presentation.html"><button id="success" class="btn btn-primary col-4">Continue</button></a>
+                </div>
+            </div>
+        </div>
+        </div> 
+
+    <!--footer-->
+    <div class="container-fluid">
+    <div class="row text-center footer">
+        <div class="col-12">
+            <p>&copy; Created for QUT CoLab2019</p>
+        </div>
+    </div>
+    </div>
+    <script src="question.js"></script>
+    <script src="presentation.js"></script>
+</body>
+</html>

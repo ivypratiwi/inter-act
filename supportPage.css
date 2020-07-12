@@ -1,0 +1,257 @@
+body{
+    padding-top:80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro{
+    margin-left:30px;
+    margin-bottom:20px;
+    margin-top:40px;
+}
+.intro-heading{
+    margin-top:auto;
+}
+.intro-explain{
+    text-align: justify;
+    padding-top:5px;
+    background-color:#e0e0e0;
+    margin-bottom:20px;
+    border-radius:10px;
+    
+}
+.video {
+	height: 30em;
+}
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*scrollable content*/
+.scrollable{
+    display: block;
+    overflow: auto;
+    height: 29em;
+    background-color:whitesmoke;
+    margin-left:50px;
+    padding-top:20px;
+    border: 1.5px solid #585858;
+    
+}
+.scrollable::-webkit-scrollbar {
+    width: 10px;
+}
+  
+.scrollable::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+.scrollable::-webkit-scrollbar-thumb {
+    background:#b0b0a8; 
+}
+.scrollable::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.scrollable li{
+    margin-top:20px;
+}
+
+/* further support*/
+.assist{
+    margin-top:25px;
+    padding-top:20px;
+    border:1px solid;
+    border-radius: 20px;
+}
+.reading{
+    padding-top:20px;
+    margin-top:25px;
+    margin-left:50px;
+    border-radius:20px;
+    border:1px solid;
+}
+
+/*quote*/
+.otro-blockquote{
+  font-size: 1.5em;
+  width:70%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #78C0A8 ;
+  line-height:1.6;
+  position: relative;
+  background:whitesmoke;
+}
+
+/*Quotation mark*/
+.otro-blockquote::before{
+    font-family:Arial;
+    content: "\201C";
+    color:#78C0A8;
+    font-size:4em;
+    position: absolute;
+    left: 10px;
+    top:-10px;
+}
+  
+.otro-blockquote::after{
+    content: '';
+}
+
+.otro-blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-top:1em;
+}
+/*button*/
+.retry-button{
+    background-color: #78C0A8;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin-top:30px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+.retry-button:hover{
+    background-color: teal;
+}
+.fa-redo{
+    font-size:85%;
+}
+
+
+
+@media (max-width: 992px) {
+.intro{
+    margin-left:15px;
+}
+.intro-heading h1{
+    font-size:150%;
+}
+.intro-explain{
+    font-size:75%;
+}
+.video {
+    height: 22em;
+}
+.scrollable{
+    height:22em;
+}
+.scrollable p{
+  
+  font-size:75%;
+}
+.scrollable h4{
+    font-size:100%;
+}
+
+}
+
+@media (max-width: 767px) {
+    .intro{
+        margin-left:25px;
+        margin-right:25px;
+    }
+    .intro-explain{
+        margin-top:15px;
+    }
+    .video {
+        height: 23em;
+    }
+    .scrollable{
+        margin-top:25px;
+        margin-left:0px;
+        height:20em;
+    }
+    .reading{
+        padding-bottom:20px;
+        margin-left:0px;
+    }
+    .reading br{
+        display: none;
+    }
+    .assist{
+        font-size:80%;
+    }
+    .assist h5{
+        font-size:130%;
+    }
+    .reading{
+        font-size: 80%;
+    }
+    .reading h5{
+        font-size:130%;
+    }
+    .otro-blockquote{
+        font-size:1em;
+    }
+    .retry-button{
+        padding: 7px 25px;
+        font-size: 17px;
+    }
+    }
+
+@media (max-width: 576px) {
+body{
+    margin-top:-25px;
+}
+.intro{
+    margin-top:10px;
+    margin-left:8px;
+    margin-right:5px;
+}
+.intro-explain{
+    margin-top:20px;
+}
+.intro-heading h1{
+    font-size:115%;
+}
+.intro-heading p{
+    font-size:80%;
+}
+.video {
+	height: 14em;
+}
+.scrollable{
+    height:15em;
+}
+.otro-blockquote{
+    font-size:0.85em;
+    padding:1.2em 30px 1.2em 40px;
+
+}
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/

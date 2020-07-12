@@ -1,0 +1,113 @@
+body{
+    padding-top:80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.final{
+    margin-left:30px;
+    margin-bottom:20px;
+    margin-top:40px;
+}
+.final-img{
+    position:relative;
+    bottom:5px;
+    width:7%;
+}
+.video {
+    height: 30em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+    height: 100%;
+}
+.cert-intro{
+    border:none;
+    border-radius: 20px;
+    padding:5px;
+    padding-top:10px;
+    margin-right:230px;
+    background-color:whitesmoke;
+}
+.finalCert{
+    width:60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30px;
+}
+
+.btn {
+margin-top:20px;
+margin-bottom:50px;
+background-color: DodgerBlue;
+border: none;
+color: white;
+padding: 5px 25px;
+cursor: pointer;
+font-size: 20px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+  
+.btn:hover {
+background-color: RoyalBlue;
+}
+
+
+@media (max-width: 992px) {
+    .final h1{
+        width:150%;
+    }
+    .cert-intro{
+        margin-right:15px;
+    }
+    .video {
+        height: 22em;
+    }
+    .finalCert{
+        width:70%;
+    }
+}
+
+@media (max-width: 767px) {
+    body{
+        width:100%;
+    }
+    .video{
+        margin-right:30px;
+    }
+}
+
+@media (max-width: 576px) {
+    body{
+        margin-top:-25px;
+    }
+    .final{
+        padding:0px;
+    }
+    .video{
+        width:100%;
+        height:15em;
+    }
+    .final-img{
+        display:none;
+    }
+    .final h1{
+        font-size:150%;
+    }
+    .final h5{
+        font-size:100%;
+    }
+    .cert-intro{
+        margin-right:0px;
+    }
+    .finalCert{
+        width:100%;
+    }
+}

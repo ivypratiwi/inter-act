@@ -1,0 +1,56 @@
+.picture{
+    margin-top:-300px;
+    margin-left: 1130px;
+    width:100%;
+}
+
+.world-map{
+margin-top: 40px;
+}
+
+#greencircle{
+  margin-left: 1580px;
+  margin-top: -565px;
+}
+
+#greencircle .indonesia {
+position:relative;
+bottom:6px;
+font-weight: bold;
+left:12px;
+visibility:hidden;
+}
+
+#greencircle:hover .indonesia {
+visibility:visible;
+}
+
+.button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button1{
+  background-color: #757575;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+}
